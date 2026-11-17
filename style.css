@@ -1,0 +1,440 @@
+:root {
+  --clr-primary: #543EE0;
+  --clr-text: #111111;
+  --clr-border: #D0D0D0;
+  --clr-cream: rgba(255, 237, 204, 0.5);
+  --clr-white: #FFFFFF;
+
+  --font-main: 'DM Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: 1.125rem; 
+  line-height: 1.5;
+  color: var(--clr-text);
+  background-color: var(--clr-white);
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 4.5rem; 
+}
+
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 157px;
+  min-height: 56px;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-outline {
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-text);
+  background-color: transparent;
+}
+
+.btn-primary {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  border: 1px solid var(--clr-primary);
+}
+
+/* 1. HEADER & NAVBAR*/
+.site-header {
+  border-bottom: 1px solid var(--clr-border);
+  background-color: var(--clr-white);
+}
+
+.header-inner {
+  min-height: 98px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  font-size: 3rem; 
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-list a {
+  font-size: 1rem; /* 16px */
+  font-weight: 700;
+}
+
+.auth-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* 2. HERO SECTION */
+.hero {
+  min-height: 704px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('./hero.background.svg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-block: 4rem;
+}
+
+.hero-content {
+  max-width: 984px;
+  margin-inline: auto;
+  color: var(--clr-white);
+}
+
+.hero-content h1 {
+  font-size: 3rem; 
+  font-weight: 700;
+  max-width: 28ch;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  max-width: 45ch;
+  margin-bottom: 2.25rem;
+}
+
+/* 3. ABOUT CHATTER SECTION*/
+.about-section {
+  margin-block: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5.25rem;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 686px;
+}
+
+.about-text h2 {
+  font-size: 3rem; 
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.about-image {
+  flex-shrink: 0;
+}
+
+.about-image img {
+  width: 500px;
+  border-radius: 8px;
+}
+
+/* 4. WHY YOU SHOULD JOIN CHATTER */
+.features-section {
+  margin-block: 5rem 6rem;
+}
+
+.features-header {
+  max-width: 1060px;
+  margin-inline: auto;
+  margin-bottom: 3.5rem;
+}
+
+.features-header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.features-header p {
+  font-size: 1.125rem;
+  color: var(--clr-text);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 1060px;
+  margin-inline: auto;
+}
+
+.feature-card {
+  border: 1px solid var(--clr-border);
+  border-radius: 8px;
+  padding: 1.5rem 1.25rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon-circle {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: rgba(214, 209, 248, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-circle img {
+  width: 32px;
+  height: 32px;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 700;
+}
+
+.feature-card p {
+  font-size: 1.125rem;
+  color: #626262;
+}
+
+ */
+.testimonial-section {
+  background-color: var(--clr-cream);
+  min-height: 492px;
+  display: flex;
+  align-items: center;
+  padding-block: 4rem;
+}
+
+.testimonial-inner {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.testimonial-avatar {
+  flex-shrink: 0;
+}
+
+.testimonial-avatar img {
+  width: 294px;
+  height: 294px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  max-width: 890px;
+}
+
+.testimonial-content blockquote {
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+}
+
+.testimonial-author {
+  margin-bottom: 2rem;
+}
+
+.testimonial-author strong {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.testimonial-author span {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+/* WRITE, READ & CONNECT SECTION*/
+.connect-section {
+  margin-block: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.avatar-cluster {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.avatar-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+}
+
+.avatar-cluster img {
+  width: 154px;
+  height: 158px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.connect-content {
+  max-width: 780px;
+}
+
+.connect-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.connect-content p {
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  max-width: 55ch;
+}
+
+/* =========================================
+   7. FOOTER SECTION
+   ========================================= */
+.site-footer {
+  background-color: var(--clr-cream);
+  padding-block: 4.5rem 5.5rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  max-width: 780px;
+}
+
+.footer-col h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-col a {
+  font-size: 1.125rem;
+}
+
+/* =========================================
+   8. RESPONSIVE DESIGN (TABLET & MOBILE)
+   ========================================= */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+
+  .header-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-block: 1rem;
+  }
+
+  .auth-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content h1,
+  .about-text h2,
+  .features-header h2,
+  .connect-content h2 {
+    font-size: 2.25rem;
+  }
+
+  .hero-content p {
+    font-size: 1.25rem;
+  }
+
+  .about-section,
+  .testimonial-inner,
+  .connect-section,
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .avatar-cluster {
+    gap: 1.25rem;
+  }
+
+  .avatar-col {
+    gap: 2rem;
+  }
+
+  .avatar-cluster img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+  }
+}
